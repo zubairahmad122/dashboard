@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body,html,:root{
+  height: 100%;
+  overflow-x: hidden !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <weight>: Use a value from 100 to 900 */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+.btn{
+  background-color: #12B76A;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 7.5px 24px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: 'Inter' 'sans-serif';
+  transition: background 0.4s ease;
+}
+.btn:hover{
+background-color: #0d854d;
+
+}
+
+@media screen and (max-width:360px) {
+  .btn{
+    padding: 7.5px 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .btn{
+    padding: 7.5px 15px;
+    font-size: 10px;
+  }
+  .container {
+    max-width: 280px;
+  }
+  .pagination-btn{
+    margin: 10px 0;
+  }
+}
+
+.container {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #dfe6ee transparent; /* Scrollbar color */
+}
+
+/* Track */
+.container::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+  border-radius: 20px;
+}
+
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+  background-color: #afb7c0; /* Scrollbar handle color */
+  border-radius: 50px; /* Rounded corners for scrollbar handle */
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #2E5AAC; /* Scrollbar handle color on hover */
+}
+
+.fub{
+  box-shadow: 0px 2px 4px -2px #1018280F;
+  box-shadow: 0px 4px 8px -2px #1018281A;
+
+}
